@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>shakany</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+      <div class="island__container">
+        <div class="island">
+          <div class="island__bar"></div>
+          <div class="avatar">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Your avatar"
+            />
+          </div>
+        </div>
+      </div>
+      <h1>shakany.</h1>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <button onclick="window.location.href = 'https://www.instagram.com/shakany';">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
+              />
+            </svg>
+            Instagram
+          </button>
+        </li>
+        <li>
+          <div class="context">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+              />
+            </svg>
+            <p>Created by shakany.</p>
+          </div>
+          <button onclick="window.location.href = 'https://www.snapchat.com/add/shakanyy?share_id=vaz0CbK8US4&locale=tr-TR';">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z"
+              />
+            </svg>
+            Snapchat
+          </button>
+        </li>
+        <li>
+          <button onclick="window.location.href = 'https://link.chess.com/friend/jp4WyG';">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"
+              />
+            </svg>
+
+            Chess.com
+          </button>
+        </li>
+        <li>
+          <button onclick="window.location.href = 'https://open.spotify.com/track/38d47UiHhyu4wdbPYz0ZUB?si=kkNivkNNRsSugB_sID_SaQ';">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z"
+              />
+            </svg>
+
+            ÅarkÄ±
+          </button>
+        </li>
+        <li>
+          <button onclick="window.location.href = 'https://discord.gg/wzEkXh2rhB';">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
+              />
+            </svg>
+
+            Discord
+          </button>
+        </li>
+        <li>
+          <a
+            href="https://x.com/shakanyy"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>X</title>
+              <path
+                fill="currentColor"
+                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+              />
+            </svg>
+            Twitter
+          </a>
+        </li>
+      </ul>
+    </main>
+    <svg
+      width="0"
+      height="0"
+      class="sr-only"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+    >
+      <defs>
+        <filter id="old-goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+        <filter id="fancy-goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
+      </defs>
+    </svg>
+    <a
+      class="bear-link"
+      href="https://instagram.com/shakany"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      <svg
+        class="w-9"
+        viewBox="0 0 969 955"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="161.191"
+          cy="320.191"
+          r="133.191"
+          stroke="currentColor"
+          stroke-width="20"
+        ></circle>
+        <circle
+          cx="806.809"
+          cy="320.191"
+          r="133.191"
+          stroke="currentColor"
+          stroke-width="20"
+        ></circle>
+        <circle
+          cx="695.019"
+          cy="587.733"
+          r="31.4016"
+          fill="currentColor"
+        ></circle>
+        <circle
+          cx="272.981"
+          cy="587.733"
+          r="31.4016"
+          fill="currentColor"
+        ></circle>
+        <path
+          d="M564.388 712.083C564.388 743.994 526.035 779.911 483.372 779.911C440.709 779.911 402.356 743.994 402.356 712.083C402.356 680.173 440.709 664.353 483.372 664.353C526.035 664.353 564.388 680.173 564.388 712.083Z"
+          fill="currentColor"
+        ></path>
+        <rect
+          x="310.42"
+          y="448.31"
+          width="343.468"
+          height="51.4986"
+          fill="#FF1E1E"
+        ></rect>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M745.643 288.24C815.368 344.185 854.539 432.623 854.539 511.741H614.938V454.652C614.938 433.113 597.477 415.652 575.938 415.652H388.37C366.831 415.652 349.37 433.113 349.37 454.652V511.741L110.949 511.741C110.949 432.623 150.12 344.185 219.845 288.24C289.57 232.295 384.138 200.865 482.744 200.865C581.35 200.865 675.918 232.295 745.643 288.24Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+<!-- partial -->
+  
+</body>
+</html>
